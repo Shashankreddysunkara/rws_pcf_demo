@@ -11,6 +11,9 @@ cf login
 Clone the repo.
 enter the repository folder:
 
+####tip:
+Use the chrome extension "auto-refresh" to automatically refresh a webpage at a set interval, this makes presenting changes easier.
+[LINK](https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko)
 
 ## Showcase PCF agnosticism:
 In this demo you will show that cloudfoundry is capable of detecting the language that the app is written in.

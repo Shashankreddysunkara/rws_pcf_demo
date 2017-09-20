@@ -3,9 +3,9 @@ const app = express()
 const PORT = process.env.PORT
 
 app.get('/', function (req, res) {
-  res.send('Hallo aissie, ik hou van jou')
+  res.send('Hello World! This is nodejs.')
 })
 
 app.listen(PORT, function () {
-  console.log('Hallo Aislinn. ik hou van jou! ' + PORT + '!')
+  console.log('App started on port: ' + PORT + '!')
 })

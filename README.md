@@ -12,7 +12,6 @@ Clone the repo.
 enter the repository folder:
 for the autoscaling test you will need a load generator, click this [LINK](https://www.digitalocean.com/community/tutorials/how-to-use-apache-jmeter-to-perform-load-testing-on-a-web-server) for a how-to on apache jmeter.
 
-#### tip:
 Use the chrome extension "auto-refresh" to automatically refresh a webpage at a set interval, this makes presenting changes easier.
 [LINK](https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko)
 

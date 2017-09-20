@@ -97,7 +97,7 @@ Keep the scaling app open in your web browser and show the app details in the pc
 Start jmeter, enter the correct url, start generating load on the app. watch it scale.
 
 ## 6. Blue-Green deployments:
-The more observant audience members will have noticed how during a code (re)push there is a short moment of downtime. This is because the container is destroyed and then replaced by the new one, people will start asking why it doesnt simply place the new one first and then replace the old one. Explain how this is a conscious decision made by the cloudfoundry developers, reasons are:"perhaps you do not have enough resources to run both a new instance of your code and the old one simultaneously, tell them about [autopilot](https://github.com/contraband/autopilot) which makes this an automated procedure, once you decide to make it default you can't go back."
+The more observant audience members will have noticed how during a code (re)push there is a short moment of downtime. This is because the container is destroyed and then replaced by the new one, people will start asking why it doesn't simply place the new one first and then replace the old one. Explain how this is a conscious decision made by the cloudfoundry developers, reasons are:"perhaps you do not have enough resources to run both a new instance of your code and the old one simultaneously, tell them about [autopilot](https://github.com/contraband/autopilot) which makes this an automated procedure, once you decide to make it default you can't go back.". Suppose your developers have a new version of your app, version 2.0. you want to deploy this a.s.a.p. here is where blue-green deployments come into play.
 
 Enter the following folder:
 ```
@@ -108,6 +108,7 @@ push the app:
 cf push
 ```
 Show that the app is running by opening it in your web browser with auto refresh enabled:
+this is version 1.0 of your code.
 Now enter the v2.0-green folder:
 ```
 ./6.blue-green-deployment/v2.0-green/

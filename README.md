@@ -1,7 +1,7 @@
 # rws_pcf_demo
 Demo apps for showcasing pivotal cloudfoundry @RWS
 
-##Prerequisites:
+## Prerequisites:
 Install cf-cli
 connect to your pcf environment using cf:
 ```
@@ -11,7 +11,7 @@ cf login
 Clone the repo.
 enter the repository folder:
 
-####tip:
+#### tip:
 Use the chrome extension "auto-refresh" to automatically refresh a webpage at a set interval, this makes presenting changes easier.
 [LINK](https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko)
 

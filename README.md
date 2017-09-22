@@ -52,7 +52,7 @@ show that the app shows up, browse to the app. delete the app.
 In this demo you will show that cloudfoundry is capable of detecting the language that the app is written in.
 You will enter one of three folders located in the repository:
 ```
-./1.hello-world/
+./3.agnosticism/
     |-nodejs/
     |-python/
     |-static/
@@ -67,7 +67,7 @@ for example:"PCF recognises nodejs by the package.json file located in the root 
 ## 4. Scaling:
 In your terminal enter the following folder:
 ```
-./2.manual-scaling/
+./4.manual-scaling/
 ```
 Push the app to pcf:
 ```

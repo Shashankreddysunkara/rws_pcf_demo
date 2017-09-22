@@ -2,7 +2,7 @@
 Demo apps for showcasing pivotal cloudfoundry @RWS
 
 ## Prerequisites:
-Install cf-cli
+Install [cf-cli](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
 connect to your pcf environment using cf:
 ```
 cf api https://awesome.url.com

@@ -2,7 +2,7 @@
 Demo apps for showcasing pivotal cloudfoundry @RWS
 
 ## Prerequisites:
-Install cf-cli
+Install [cf-cli](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
 connect to your pcf environment using cf:
 ```
 cf api https://awesome.url.com
@@ -11,9 +11,6 @@ cf login
 Clone the repo.
 enter the repository folder:
 for the autoscaling test you will need a load generator, click this [LINK](https://www.digitalocean.com/community/tutorials/how-to-use-apache-jmeter-to-perform-load-testing-on-a-web-server) for a how-to on apache jmeter.
-
-Use the chrome extension "auto-refresh" to automatically refresh a webpage at a set interval, this makes presenting changes easier.
-[LINK](https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko)
 
 ## 1. Ease of deployment
 Explain a little bit about the deployment procedures in old world scenarios, like for example how you would have to upload your code through ftp and restart web servers or how you could have cron jobs run git pulls and service restarts. Now show how easy it is to push an app using pivotal cloud foundry.
@@ -52,7 +49,7 @@ show that the app shows up, browse to the app. delete the app.
 In this demo you will show that cloudfoundry is capable of detecting the language that the app is written in.
 You will enter one of three folders located in the repository:
 ```
-./1.hello-world/
+./3.agnosticism/
     |-nodejs/
     |-python/
     |-static/
@@ -67,7 +64,7 @@ for example:"PCF recognises nodejs by the package.json file located in the root 
 ## 4. Scaling:
 In your terminal enter the following folder:
 ```
-./2.manual-scaling/
+./4.manual-scaling/
 ```
 Push the app to pcf:
 ```
@@ -106,7 +103,7 @@ push the app:
 ```
 cf push
 ```
-Show that the app is running by opening it in your web browser with auto refresh enabled:
+Show that the app is running by opening it in your web browser (should auto refresh):
 this is version 1.0 of your code.
 Now enter the v2.0-green folder:
 ```

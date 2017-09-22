@@ -12,9 +12,6 @@ Clone the repo.
 enter the repository folder:
 for the autoscaling test you will need a load generator, click this [LINK](https://www.digitalocean.com/community/tutorials/how-to-use-apache-jmeter-to-perform-load-testing-on-a-web-server) for a how-to on apache jmeter.
 
-Use the chrome extension "auto-refresh" to automatically refresh a webpage at a set interval, this makes presenting changes easier.
-[LINK](https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko)
-
 ## 1. Ease of deployment
 Explain a little bit about the deployment procedures in old world scenarios, like for example how you would have to upload your code through ftp and restart web servers or how you could have cron jobs run git pulls and service restarts. Now show how easy it is to push an app using pivotal cloud foundry.
 Enter the following folder:
@@ -106,7 +103,7 @@ push the app:
 ```
 cf push
 ```
-Show that the app is running by opening it in your web browser with auto refresh enabled:
+Show that the app is running by opening it in your web browser (should auto refresh):
 this is version 1.0 of your code.
 Now enter the v2.0-green folder:
 ```

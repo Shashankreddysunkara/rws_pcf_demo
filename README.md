@@ -113,15 +113,14 @@ push it using the following command:
 ```
 cf push
 ```
-At this point you should have 4 instances of Blue and zero instances of Green.
+At this point you should have 4 instances of Blue and one instances of Green.
 Map the Green app to the Blue route:
 ```
 cf map-route Green <domain - test-cf-prod.intranet.rws.nl> -n blue-green
 ```
-Scale the blue app down by one and the green app up by one:
+Scale the blue app down by one:
 ```
 cf scale Blue -i 3
-cf scale Green -i 1
 ```
 Now we have 3 Blue instances and 1 green.
 So customers would be seeing the new version of the app 25% of the time, the auto refreshing web browser should show this.

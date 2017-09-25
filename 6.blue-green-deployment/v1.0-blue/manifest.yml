@@ -3,3 +3,4 @@ applications:
   memory: 64M
   instances: 4
   host: blue-green
+  random-route: true

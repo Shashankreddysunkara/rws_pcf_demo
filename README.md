@@ -1,16 +1,6 @@
 # rws_pcf_demo
 Demo apps for showcasing pivotal cloudfoundry @RWS
 
-## Prerequisites:
-Install [cf-cli](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
-connect to your pcf environment using cf:
-```
-cf api https://awesome.url.com
-cf login
-```
-Clone the repo.
-enter the repository folder:
-for the autoscaling test you will need a load generator, click this [LINK](https://www.digitalocean.com/community/tutorials/how-to-use-apache-jmeter-to-perform-load-testing-on-a-web-server) for a how-to on apache jmeter.
 
 ## 1. Ease of deployment
 Explain a little bit about the deployment procedures in old world scenarios, like for example how you would have to upload your code through ftp and restart web servers or how you could have cron jobs run git pulls and service restarts. Now show how easy it is to push an app using pivotal cloud foundry.
@@ -59,7 +49,7 @@ from within one of the folders execute a push:
 cf push
 ```
 demonstrate that the command is exactly the same for each of the three different languages, explain a little bit about how pcf recognises the different languages.
-for example:"PCF recognises nodejs by the package.json file located in the root of the app, it recognises python by the Procfile and the requirements.txt file and lastly it recognises the static html by the Staticfile you have to provide.", perhaps you could also explain a little bit about buildpacks and how you might even create your own if you so desire.
+for example:"PCF recognises nodejs by the package.json file located in the root of the app, it recognises python by the Procfile and the requirements.txt file and lastly it recognises the static html by the Staticfile you have to provide.".
 
 ## 4. Scaling:
 In your terminal enter the following folder:
@@ -81,7 +71,7 @@ now do the same but for the amount of instances:
 cf scale scaling -i 4
 ```
 In the pcf webui on the app details page, show that we have multiple instances:
-The instance ID on the app's page should change, explain why this is awesome. talk about how you could preemptively scale up a webshop the night before black friday or something.
+The instance ID on the app's page should change.
 
 ## 5. Auto-Scaling:
 Explain how scaling is good but auto-scaling is better, you don't want a silly human monitoring your app and responding to heavy load when a computer is much better equipped to deal with situations like that.
@@ -93,7 +83,6 @@ Keep the scaling app open in your web browser and show the app details in the pc
 Start jmeter, enter the correct url, start generating load on the app. watch it scale.
 
 ## 6. Blue-Green deployments:
-The more observant audience members will have noticed how during a code (re)push there is a short moment of downtime. This is because the container is destroyed and then replaced by the new one, people will start asking why it doesn't simply place the new one first and then replace the old one. Explain how this is a conscious decision made by the cloudfoundry developers, reasons are:"perhaps you do not have enough resources to run both a new instance of your code and the old one simultaneously, tell them about [autopilot](https://github.com/contraband/autopilot) which makes this an automated procedure, once you decide to make it default you can't go back.". Suppose your developers have a new version of your app, version 2.0. you want to deploy this a.s.a.p. here is where blue-green deployments come into play.
 
 Enter the following folder:
 ```
